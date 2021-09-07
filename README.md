@@ -33,9 +33,11 @@ Também é necessário importar o arquivo .sql que coloquei na pasta dump. Ele s
 A aplicação é bem simples e portanto só conta com dois end-points.
 <br />
 1 - /api/importador/get_all_cnab/
+<br />
 Este end-point não espera nenhum parâmetro e é utilizado apenas para pegar os dados importados.
 <br />
 2 - /api/importador/cnab/
+<br />
 Este end-point espera receber um arquivo txt.
 <br />
 
