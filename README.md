@@ -1,4 +1,4 @@
-# Como Rodar a Aplicação.
+# Como Rodar a Aplicação .
 
 Eu fiz utilizando docker e linux, então abra o terminal, caso for linux e digite a próxima linha.
 <br />
@@ -28,6 +28,7 @@ Também é necessário importar o arquivo .sql que coloquei na pasta dump. Ele s
 <br />
 
 # End-Points.
+
 <br />
 A aplicação é bem simples e portanto só conta com dois end-points.
 <br />
@@ -37,12 +38,18 @@ Este end-point não espera nenhum parâmetro e é utilizado apenas para pegar os
 2 - /api/importador/cnab/
 Este end-point espera receber um arquivo txt.
 <br />
+
+
 # Um Pouco sobre a aplicação.
+
+
 <br />
 A aplicação foi feita utilizando Django, Django Rest Framework, Mysql e Docker no back-end e no frond end HTML, CSS, Javascript e Bootstrap.
 Eu gosto de separar as pastas e arquivos em dois tipos global e local, pela estrutura do projeto da para perceber isso.
 <br />
-# .env
+
+# End-Points.
+
 <br />
 O ideal é que tenha um arquivo desse local e um no servidor, mas como é um teste, eu preferi subir ele no github para você que vai analisar o programa não prceisar criar ele.
 <br />
