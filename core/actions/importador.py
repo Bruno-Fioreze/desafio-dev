@@ -19,6 +19,14 @@ class UtilsViewSet:
 
     @staticmethod
     def salva_arquivo(file):
+        """[Função responsável por salvar o arquivo.]
+
+        Args:
+            file ([.txt]): [Arquivo cnab]
+
+        Returns:
+            [dict]: [Retorna um dict com o nome do arquivo e se deu erro.]
+        """
         erro = False
         try:
             fs = FileSystemStorage(location='./media/')
@@ -31,6 +39,14 @@ class UtilsViewSet:
 
     @staticmethod
     def cria_instancia(linha):
+        """[Função responsável por processar as linhas e transforma-las em uma instância.]
+
+        Args:
+            linha ([type]): [description]
+
+        Returns:
+            [Cnab]: [Retorna uma instância de Cnab.]
+        """
         
         #if(len(linha) < 80):
         #    raise Exception("A Linha não contém o número de caracteres necessário para o processamento.")
@@ -72,6 +88,14 @@ class ImportadorViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=["post"], url_path="cnab")
     def importar_cnab(self, request, *args, **kwargs):
+        """[Função responsável por extrair as informações do txt.]
+
+        Args:
+            request ([.txt]): [arquivo cnab]
+
+        Returns:
+            [JSON]: [ retorna um json com status e com os dados tratados.]
+        """
         if(len(request.FILES.getlist('file')) == 0 ):
             return JsonResponse({}, safe=False, status=Status.HTTP_422_UNPROCESSABLE_ENTITY)
 
@@ -93,6 +117,14 @@ class ImportadorViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=["get"], url_path="get_all_cnab")
     def get_all_cnab(self, request, *args, **kwargs):
+        """[Função responsável por mostrar todos os lançamentos já importados.]
+
+        Args:
+            request ([]): []
+
+        Returns:
+            [JSON]: [Retorna um json com os dados tratados]
+        """
         serializer = self.serializer_class(
             self.queryset.objects.all(), 
             fields={
