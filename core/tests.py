@@ -48,7 +48,7 @@ class TestUtils(unittest.TestCase):
     def test_cria_instancia_deve_retornar_uma_instancia_caso_nao_possua_erros(self):
         linha = "3201903010000014200096206760174753****3153153453JOÃO MACEDO   BAR DO JOÃO"
         data = UtilsViewSet.cria_instancia(linha)
-        self.assertIsInstance(Cnab, data)
+        self.assertIsInstance(data, Cnab)
 
     #def test_cria_instancia_deve_retornar_deve_levantar_uma_exception_caso_o_parametro_esteja_errado(self):
     #    self.assertRaises(Exception, UtilsViewSet.cria_instancia)
