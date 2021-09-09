@@ -35,7 +35,7 @@ const get_total_loja = (lancamento, proximo_lancamento, dados, listagem) => {
         nome_loja = lancamento.nome_loja
         lancamentos_loja = dados.filter( ( lancamento_filter ) => lancamento_filter.nome_loja === nome_loja)
         for ( lancamento_loja of lancamentos_loja ){
-            positivo_negativo = lancamento_loja.tipo_transacao.sinal === "+" ? + 1 : -1
+            positivo_negativo = lancamento_loja.tipo_transacao.sinal === "+" ?  1 : -1
             count_total = count_total + ( parseFloat(lancamento_loja.valor) * positivo_negativo)
         }
 
