@@ -53,6 +53,6 @@ Eu gosto de separar as pastas e arquivos em dois tipos global e local, pela estr
 # Arquivo .Env .
 
 <br />
-O ideal é que tenha um arquivo desse local e um no servidor, mas como é um teste, eu preferi subir ele no github para você que vai analisar o programa não prceisar criar ele.
+O ideal é que tenha um arquivo desse local e um no servidor, mas como é um teste, eu preferi subir ele no github para você que vai analisar o programa não precisar criar ele.
 <br />
 Agradeço desde já pela atenção.
