@@ -46,7 +46,7 @@ Este end-point espera receber um arquivo txt.
 
 
 <br />
-A aplicação foi feita utilizando Django, Django Rest Framework, Mysql, Docker, unittest e TDD no back-end e no frond end HTML, CSS, Javascript e Bootstrap.
+A aplicação foi feita utilizando Django, Django Rest Framework, Mysql, Docker, unittest e TDD no back-end e no front end HTML, CSS, Javascript e Bootstrap.
 Eu gosto de separar as pastas e arquivos em dois tipos global e local, pela estrutura do projeto da para perceber isso.
 <br />
 
